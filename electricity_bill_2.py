@@ -9,6 +9,11 @@ if unit>=1 and unit<=100:
 elif unit>100 and unit<=200:
     print("total bill=",(unit-100)*5)
 elif unit>200:
-    print("total bill=",((unit-200)*5)+100*10)
+    a=unit-200
+    b=a*10
+    c=unit-(a+100)
+    d=c*5
+    bill=b+d
+    print("total bill",bill)
 else:
     print("unavailable")
